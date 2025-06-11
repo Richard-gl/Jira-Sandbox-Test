@@ -1,6 +1,6 @@
-package com.swag.pe.steps.login;
+package com.jira.pe.steps.login;
 
-import com.swag.pe.pages.login.LoginPage;
+import com.jira.pe.pages.login.LoginPage;
 import net.serenitybdd.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 

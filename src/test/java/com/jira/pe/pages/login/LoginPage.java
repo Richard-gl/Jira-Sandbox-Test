@@ -1,4 +1,4 @@
-package com.swag.pe.pages.login;
+package com.jira.pe.pages.login;
 
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
@@ -17,9 +17,9 @@ public class LoginPage extends PageObject {
     protected WebElementFacade btn_login;
 
     public void enterUsername(String username) {
-        txt_username.waitUntilVisible().sendKeys(username);
+        waitFor(txt_username).waitUntilVisible();
+        txt_username.sendKeys(username);
     }
-
     public void enterPassword(String password) {
         txt_password.waitUntilVisible().sendKeys(password);
     }

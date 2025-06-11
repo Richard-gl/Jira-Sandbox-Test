@@ -1,8 +1,8 @@
-package com.swag.pe.definitions.login;
+package com.jira.pe.definitions.login;
 
-import com.swag.pe.steps.login.LoginStep;
-import com.swag.pe.steps.validations.ValidationStep;
-import com.swag.pe.utilities.website.WebSite;
+import com.jira.pe.steps.login.LoginStep;
+import com.jira.pe.steps.validations.ValidationStep;
+import com.jira.pe.utilities.website.WebSite;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -24,7 +24,7 @@ public class LoginDef {
 
     @Given("el usuario navega al sitio web")
     public void userNavigateTo(){
-        url.navigateTo("https://www.saucedemo.com/v1/index.html");
+        url.navigateTo("https://bcp-ti-sandbox-995.atlassian.net.mcas.ms/jira");
     }
 
     @When("ingresa credenciales validas")
